@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHSContentViewController : UIViewController
+/**
+ * メイン画面の各ページのコントローラです
+ */
+@interface PHSContentViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
