@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576C9516199A098D007BF08F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9515199A098D007BF08F /* Foundation.framework */; };
+		576C9518199A098D007BF08F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9517199A098D007BF08F /* CoreGraphics.framework */; };
+		576C951A199A098D007BF08F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9519199A098D007BF08F /* UIKit.framework */; };
+		576C9520199A098D007BF08F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576C951E199A098D007BF08F /* InfoPlist.strings */; };
+		576C9522199A098D007BF08F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C9521199A098D007BF08F /* main.m */; };
+		576C9526199A098D007BF08F /* PHSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C9525199A098D007BF08F /* PHSAppDelegate.m */; };
+		576C9529199A098D007BF08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576C9527199A098D007BF08F /* Main.storyboard */; };
+		576C952C199A098D007BF08F /* PHSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C952B199A098D007BF08F /* PHSViewController.m */; };
+		576C952E199A098D007BF08F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576C952D199A098D007BF08F /* Images.xcassets */; };
+		576C9535199A098D007BF08F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9534199A098D007BF08F /* XCTest.framework */; };
+		576C9536199A098D007BF08F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9515199A098D007BF08F /* Foundation.framework */; };
+		576C9537199A098D007BF08F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576C9519199A098D007BF08F /* UIKit.framework */; };
+		576C953F199A098D007BF08F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576C953D199A098D007BF08F /* InfoPlist.strings */; };
+		576C9541199A098D007BF08F /* PhilosocialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C9540199A098D007BF08F /* PhilosocialTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576C9538199A098D007BF08F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576C950A199A098D007BF08F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 576C9511199A098D007BF08F;
+			remoteInfo = Philosocial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		576C9512199A098D007BF08F /* Philosocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Philosocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		576C9515199A098D007BF08F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		576C9517199A098D007BF08F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		576C9519199A098D007BF08F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		576C951D199A098D007BF08F /* Philosocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Philosocial-Info.plist"; sourceTree = "<group>"; };
+		576C951F199A098D007BF08F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		576C9521199A098D007BF08F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		576C9523199A098D007BF08F /* Philosocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Philosocial-Prefix.pch"; sourceTree = "<group>"; };
+		576C9524199A098D007BF08F /* PHSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSAppDelegate.h; sourceTree = "<group>"; };
+		576C9525199A098D007BF08F /* PHSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSAppDelegate.m; sourceTree = "<group>"; };
+		576C9528199A098D007BF08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		576C952A199A098D007BF08F /* PHSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHSViewController.h; sourceTree = "<group>"; };
+		576C952B199A098D007BF08F /* PHSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSViewController.m; sourceTree = "<group>"; };
+		576C952D199A098D007BF08F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		576C9533199A098D007BF08F /* PhilosocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilosocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576C9534199A098D007BF08F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		576C953C199A098D007BF08F /* PhilosocialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhilosocialTests-Info.plist"; sourceTree = "<group>"; };
+		576C953E199A098D007BF08F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		576C9540199A098D007BF08F /* PhilosocialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhilosocialTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576C950F199A098D007BF08F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C9518199A098D007BF08F /* CoreGraphics.framework in Frameworks */,
+				576C951A199A098D007BF08F /* UIKit.framework in Frameworks */,
+				576C9516199A098D007BF08F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C9530199A098D007BF08F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C9535199A098D007BF08F /* XCTest.framework in Frameworks */,
+				576C9537199A098D007BF08F /* UIKit.framework in Frameworks */,
+				576C9536199A098D007BF08F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576C9509199A098D007BF08F = {
+			isa = PBXGroup;
+			children = (
+				576C951B199A098D007BF08F /* Philosocial */,
+				576C953A199A098D007BF08F /* PhilosocialTests */,
+				576C9514199A098D007BF08F /* Frameworks */,
+				576C9513199A098D007BF08F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		576C9513199A098D007BF08F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				576C9512199A098D007BF08F /* Philosocial.app */,
+				576C9533199A098D007BF08F /* PhilosocialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576C9514199A098D007BF08F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				576C9515199A098D007BF08F /* Foundation.framework */,
+				576C9517199A098D007BF08F /* CoreGraphics.framework */,
+				576C9519199A098D007BF08F /* UIKit.framework */,
+				576C9534199A098D007BF08F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		576C951B199A098D007BF08F /* Philosocial */ = {
+			isa = PBXGroup;
+			children = (
+				576C9524199A098D007BF08F /* PHSAppDelegate.h */,
+				576C9525199A098D007BF08F /* PHSAppDelegate.m */,
+				576C9527199A098D007BF08F /* Main.storyboard */,
+				576C952A199A098D007BF08F /* PHSViewController.h */,
+				576C952B199A098D007BF08F /* PHSViewController.m */,
+				576C952D199A098D007BF08F /* Images.xcassets */,
+				576C951C199A098D007BF08F /* Supporting Files */,
+			);
+			path = Philosocial;
+			sourceTree = "<group>";
+		};
+		576C951C199A098D007BF08F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576C951D199A098D007BF08F /* Philosocial-Info.plist */,
+				576C951E199A098D007BF08F /* InfoPlist.strings */,
+				576C9521199A098D007BF08F /* main.m */,
+				576C9523199A098D007BF08F /* Philosocial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		576C953A199A098D007BF08F /* PhilosocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				576C9540199A098D007BF08F /* PhilosocialTests.m */,
+				576C953B199A098D007BF08F /* Supporting Files */,
+			);
+			path = PhilosocialTests;
+			sourceTree = "<group>";
+		};
+		576C953B199A098D007BF08F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				576C953C199A098D007BF08F /* PhilosocialTests-Info.plist */,
+				576C953D199A098D007BF08F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		576C9511199A098D007BF08F /* Philosocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576C9544199A098D007BF08F /* Build configuration list for PBXNativeTarget "Philosocial" */;
+			buildPhases = (
+				576C950E199A098D007BF08F /* Sources */,
+				576C950F199A098D007BF08F /* Frameworks */,
+				576C9510199A098D007BF08F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Philosocial;
+			productName = Philosocial;
+			productReference = 576C9512199A098D007BF08F /* Philosocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		576C9532199A098D007BF08F /* PhilosocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576C9547199A098D007BF08F /* Build configuration list for PBXNativeTarget "PhilosocialTests" */;
+			buildPhases = (
+				576C952F199A098D007BF08F /* Sources */,
+				576C9530199A098D007BF08F /* Frameworks */,
+				576C9531199A098D007BF08F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576C9539199A098D007BF08F /* PBXTargetDependency */,
+			);
+			name = PhilosocialTests;
+			productName = PhilosocialTests;
+			productReference = 576C9533199A098D007BF08F /* PhilosocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576C950A199A098D007BF08F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PHS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = hackugyo;
+				TargetAttributes = {
+					576C9532199A098D007BF08F = {
+						TestTargetID = 576C9511199A098D007BF08F;
+					};
+				};
+			};
+			buildConfigurationList = 576C950D199A098D007BF08F /* Build configuration list for PBXProject "Philosocial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576C9509199A098D007BF08F;
+			productRefGroup = 576C9513199A098D007BF08F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				576C9511199A098D007BF08F /* Philosocial */,
+				576C9532199A098D007BF08F /* PhilosocialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		576C9510199A098D007BF08F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C952E199A098D007BF08F /* Images.xcassets in Resources */,
+				576C9520199A098D007BF08F /* InfoPlist.strings in Resources */,
+				576C9529199A098D007BF08F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C9531199A098D007BF08F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C953F199A098D007BF08F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576C950E199A098D007BF08F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C952C199A098D007BF08F /* PHSViewController.m in Sources */,
+				576C9526199A098D007BF08F /* PHSAppDelegate.m in Sources */,
+				576C9522199A098D007BF08F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576C952F199A098D007BF08F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576C9541199A098D007BF08F /* PhilosocialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576C9539199A098D007BF08F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 576C9511199A098D007BF08F /* Philosocial */;
+			targetProxy = 576C9538199A098D007BF08F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576C951E199A098D007BF08F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C951F199A098D007BF08F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		576C9527199A098D007BF08F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C9528199A098D007BF08F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		576C953D199A098D007BF08F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576C953E199A098D007BF08F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		576C9542199A098D007BF08F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		576C9543199A098D007BF08F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576C9545199A098D007BF08F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Philosocial/Philosocial-Prefix.pch";
+				INFOPLIST_FILE = "Philosocial/Philosocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		576C9546199A098D007BF08F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Philosocial/Philosocial-Prefix.pch";
+				INFOPLIST_FILE = "Philosocial/Philosocial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		576C9548199A098D007BF08F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Philosocial.app/Philosocial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Philosocial/Philosocial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhilosocialTests/PhilosocialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		576C9549199A098D007BF08F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Philosocial.app/Philosocial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Philosocial/Philosocial-Prefix.pch";
+				INFOPLIST_FILE = "PhilosocialTests/PhilosocialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576C950D199A098D007BF08F /* Build configuration list for PBXProject "Philosocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C9542199A098D007BF08F /* Debug */,
+				576C9543199A098D007BF08F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576C9544199A098D007BF08F /* Build configuration list for PBXNativeTarget "Philosocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C9545199A098D007BF08F /* Debug */,
+				576C9546199A098D007BF08F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		576C9547199A098D007BF08F /* Build configuration list for PBXNativeTarget "PhilosocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576C9548199A098D007BF08F /* Debug */,
+				576C9549199A098D007BF08F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 576C950A199A098D007BF08F /* Project object */;
+}
