@@ -103,7 +103,8 @@
         
         NSInteger actualNumberOfRows = _objects.count;
         if (actualNumberOfRows == 0) {
-            [[segue destinationViewController] setDetailItem:@"https://www.google.com/calendar/syncselect"];
+            //[[segue destinationViewController] setDetailItem:@"https://www.google.com/calendar/syncselect"];
+            [[segue destinationViewController] setDetailItem:@"https://www.google.com/calendar/render?cid=ktju3jonf98solrasjg5tqucbk@group.calendar.google.com"];
         } else {
             NSDate *object = _objects[indexPath.row];
             // TODO something else
