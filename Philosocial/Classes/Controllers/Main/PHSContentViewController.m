@@ -7,6 +7,7 @@
 //
 
 #import "PHSContentViewController.h"
+#import "PHSWebViewController.h"
 
 @interface PHSContentViewController () {
     NSMutableArray *_objects;
@@ -29,10 +30,10 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    // UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    //self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,15 +64,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    NSInteger actualNumberOfRows = _objects.count;
+    return (actualNumberOfRows == 0) ? 1 : _objects.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSInteger actualNumberOfRows = _objects.count;
+    if (actualNumberOfRows == 0) {
+        cell.textLabel.text = @"Sync Calendar";
+    } else {
+        NSDate *object = _objects[indexPath.row];
+        cell.textLabel.text = [object description];
+    }
     return cell;
 }
 
@@ -92,4 +99,21 @@
 }
 
 
+#pragma mark - Transition
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showCalendarSync"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSInteger actualNumberOfRows = _objects.count;
+        if (actualNumberOfRows == 0) {
+            [[segue destinationViewController] setDetailItem:@"https://www.google.com/calendar/syncselect"];
+        } else {
+            NSDate *object = _objects[indexPath.row];
+            // TODO something else
+        }
+    }
+
+}
 @end
