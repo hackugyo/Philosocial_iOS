@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewPagerController.h"
 
-@interface PHSViewController : UIViewController
+@interface PHSViewController : ViewPagerController<ViewPagerDataSource, ViewPagerDelegate>
 
 @end
