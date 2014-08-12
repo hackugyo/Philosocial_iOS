@@ -7,6 +7,7 @@
 //
 
 #import "PHSViewController.h"
+#import "PHSContentViewController.h"
 
 @interface PHSViewController ()
 
@@ -18,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.dataSource = self;
+    self.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,13 +51,22 @@
  *
  * @return A view that will be shown as tab at the given index
  */
+
 - (UIView *)viewPager:(ViewPagerController *)viewPager viewForTabAtIndex:(NSUInteger)index
 {
     UILabel *label = [UILabel new];
-    label.text = [NSString stringWithFormat:@"タブ #%i", index];
+    label.text = [NSString stringWithFormat:@"tab #%i", index];
     [label sizeToFit];
     
     return label;
+}
+
+#pragma mark - ViewPagerDataSource
+- (UIViewController *)viewPager:(ViewPagerController *)viewPager contentViewControllerForTabAtIndex:(NSUInteger)index {
+    
+    PHSContentViewController *cvc = [self.storyboard instantiateViewControllerWithIdentifier:@"contentViewController"];
+    
+    return cvc;
 }
 
 
